@@ -559,43 +559,57 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-862cc5e elementor-widget elementor-widget-heading" data-id="862cc5e" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<style>
+									</div>
+				</div>
+					</div>
+		<style>
 /* O CSS define a aparência e a animação */
-.oferta-relampago {
-    /* Fundo e Cor */
+.oferta-selo {
+    /* FORMATO: Fundo, Cor e Bordas */
     background-color: black;
     color: yellow;
-    padding: 10px 15px; /* Espaçamento interno */
+    padding: 20px 10px; /* Espaçamento interno grande para ficar alto */
     text-align: center;
     font-weight: bold;
-    font-size: 1.2em; /* Tamanho da fonte */
-    border-radius: 5px; /* Bordas levemente arredondadas */
-    display: block; /* Garante que ocupe a largura total */
-    margin: 10px 0; /* Espaçamento acima e abaixo */
+    font-size: 1.1em;
+    line-height: 1.2; /* Espaçamento entre as linhas */
+    border-radius: 10px; /* Bordas arredondadas */
+    
+    /* ********** MUDANÇA CHAVE PARA FLUTUAR ********** */
+    /* Faz a caixa ter apenas a largura do conteúdo (as palavras) */
+    display: inline-block;
+    
+    /* ********** MUDANÇA CHAVE PARA POSICIONAR ********** */
+    /* Retira o selo do fluxo normal e permite movê-lo */
+    position: absolute;
+    top: 50px;    /* Ajuste para mover para cima/baixo */
+    right: 20px;  /* Ajuste para mover para direita/esquerda */
+    z-index: 10; /* Garante que fique por cima de outros elementos */
+    
+    /* Aprimoramento visual de "adesivo" */
+    border: 3px solid #ffcc00; /* Borda externa amarela */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Sombra inicial */
 
     /* Configuração da Animação de Pulsação */
-    animation: pulso 1.5s infinite alternate; /* Nome, duração, repetição e direção */
+    animation: pulso 1.5s infinite alternate;
 }
 
 /* A keyframe 'pulso' define como a animação acontece */
 @keyframes pulso {
     0% {
-        transform: scale(1); /* Tamanho normal no início */
-        box-shadow: 0 0 0 rgba(255, 255, 0, 0.7); /* Sombra amarela suave */
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Sombra suave */
     }
     100% {
         transform: scale(1.05); /* Ligeiramente maior */
-        box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Sombra mais intensa */
+        box-shadow: 0 0 25px rgba(255, 204, 0, 1); /* Sombra mais intensa (efeito brilho) */
     }
 }
 </style>
 
-<div class="oferta-relampago">
-    OFERTA RELÂMPAGO PRÉ BLACK FRIDAY ⚡🔥
-</div>				</div>
-				</div>
-					</div>
-		</div>
+<div class="oferta-selo">
+    OFERTA<br>RELÂMPAGO<br>PRÉ<br>BLACK<br>FRIDAY<br>⚡🔥
+</div>
 					</div>
 		</section>
 				<div class="elementor-element elementor-element-43a6266 elementor-widget elementor-widget-heading" data-id="43a6266" data-element_type="widget" data-widget_type="heading.default">
