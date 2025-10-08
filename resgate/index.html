@@ -382,15 +382,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 <div class="ns-size-selector-container" style="
     display: grid;
-    /* Ajusta o número de colunas:
-       Cria quantas colunas puderem caber, com cada uma tendo no mínimo 40px de largura,
-       e distribuindo o restante do espaço igualmente (1fr).
-       Isso fará com que todos os botões fiquem visíveis e quebrem a linha automaticamente,
-       mas permitindo que mais caibam antes da quebra. */
-    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); 
+    /* Define 8 colunas de largura igual para acomodar a primeira linha (35 ao 42) */
+    grid-template-columns: repeat(8, 1fr); 
     gap: 8px; /* Espaçamento entre os botões */
     margin-bottom: 30px;
-    padding-right: 2px; /* Pequeno padding para evitar que o último item da linha fique "grudado" na borda */
 ">
     
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
@@ -399,14 +394,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc; /* Borda sólida para disponível */
+        border: 0.5px solid #dcdcdc; /* Contorno mais fino e suave */
         border-radius: 8px;
-        background-color: white; /* Fundo branco para disponível */
-        color: #333; /* Texto escuro */
+        background-color: white;
+        color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em; /* Tamanho dos números */
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05); /* Sombra suave para disponível */
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05); /* Sombra mais suave */
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
@@ -419,14 +414,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
@@ -439,14 +434,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
@@ -459,14 +454,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
@@ -479,14 +474,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
@@ -499,35 +494,34 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">40</span>
         </span>
     </a>
-
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
         width: 100%;
         aspect-ratio: 1 / 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
@@ -540,35 +534,39 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">42</span>
         </span>
     </a>
+
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
-        width: 100%;
-        aspect-ratio: 1 / 1;
+        /* Força este item a começar na primeira coluna de uma nova linha */
+        grid-column: 1 / -1; 
+        width: calc(100% / 8 * 1 - 8px * 7 / 8); /* Calcula a largura para caber em uma coluna do grid principal, ajustado pelo gap */
+        aspect-ratio: 1 / 1; 
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
+        margin-top: 8px; /* Adiciona espaçamento vertical entre as fileiras */
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">43</span>
@@ -580,15 +578,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
+        margin-top: 8px; /* Ajuste para o espaçamento vertical */
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">44</span>
@@ -600,38 +599,40 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 0.5px solid #dcdcdc;
         border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 0.5px 1px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
+        margin-top: 8px; /* Ajuste para o espaçamento vertical */
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">45</span>
         </span>
     </a>
-
+    
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
         width: 100%;
         aspect-ratio: 1 / 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px dashed #ccc; /* Borda tracejada para indisponível */
+        border: 0.5px dashed #ccc; /* Borda tracejada e mais fina */
         border-radius: 8px;
-        background-color: #f7f7f7; /* Fundo mais claro/esmaecido */
-        color: #aaa; /* Texto cinza claro */
+        background-color: #f7f7f7;
+        color: #aaa;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
-        box-shadow: none; /* Sem sombra para indisponíveis */
+        box-shadow: none;
         transition: all 0.2s ease;
         position: relative; 
         cursor: not-allowed;
+        margin-top: 8px; /* Ajuste para o espaçamento vertical */
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">46</span>
@@ -643,17 +644,18 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px dashed #ccc;
+        border: 0.5px dashed #ccc;
         border-radius: 8px;
         background-color: #f7f7f7;
         color: #aaa;
         font-weight: bold;
-        font-size: 0.9em; /* NÚMEROS MENORES */
+        font-size: 0.9em;
         text-decoration: none;
         box-shadow: none;
         transition: all 0.2s ease;
         position: relative;
         cursor: not-allowed;
+        margin-top: 8px; /* Ajuste para o espaçamento vertical */
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">47</span>
