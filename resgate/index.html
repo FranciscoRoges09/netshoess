@@ -383,15 +383,153 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     </div>
 </div>
 
-<div class="ns-size-selector-container" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px;">
+<div class="ns-size-selector-container" style="
+    display: flex; /* Flexbox para linha única */
+    flex-wrap: nowrap; /* Impede a quebra de linha */
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se houver muitos itens */
+    gap: 8px; /* Espaço entre os botões */
+    margin-bottom: 30px;
+    padding-bottom: 5px; /* Para não cortar a barra de rolagem se aparecer */
+    -webkit-overflow-scrolling: touch; /* Melhor rolagem em iOS */
+">
+    <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
+        flex-shrink: 0; /* Impede que o botão encolha */
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        color: #aaa;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-decoration: none;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        transition: all 0.2s ease;
+        position: relative; /* Para posicionar o 'X' */
+        cursor: not-allowed;
+    ">
+        <span class="elementor-button-content-wrapper">
+            <span class="elementor-button-text">34</span>
+        </span>
+        <span class="x-overlay-indisponivel" style="
+            position: absolute;
+            top: -5px; /* Ajuste a posição vertical */
+            right: -5px; /* Ajuste a posição horizontal */
+            background-color: white; /* Fundo do 'X' */
+            border: 1px solid #ddd; /* Borda do 'X' */
+            border-radius: 50%; /* Faz o 'X' ser um círculo */
+            width: 20px; /* Tamanho do círculo */
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em; /* Tamanho do texto 'X' */
+            color: #DC3545; /* Cor do texto 'X' (vermelho) */
+            font-weight: bold;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            pointer-events: none; /* Não interfere no clique do botão pai */
+            z-index: 10;
+        ">X</span>
+    </a>
+
+    <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
+        flex-shrink: 0;
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        color: #aaa;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-decoration: none;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        transition: all 0.2s ease;
+        position: relative;
+        cursor: not-allowed;
+    ">
+        <span class="elementor-button-content-wrapper">
+            <span class="elementor-button-text">35</span>
+        </span>
+        <span class="x-overlay-indisponivel" style="
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            color: #DC3545;
+            font-weight: bold;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            pointer-events: none;
+            z-index: 10;
+        ">X</span>
+    </a>
+
+    <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
+        flex-shrink: 0;
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        color: #aaa;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-decoration: none;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        transition: all 0.2s ease;
+        position: relative;
+        cursor: not-allowed;
+    ">
+        <span class="elementor-button-content-wrapper">
+            <span class="elementor-button-text">36</span>
+        </span>
+        <span class="x-overlay-indisponivel" style="
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            color: #DC3545;
+            font-weight: bold;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            pointer-events: none;
+            z-index: 10;
+        ">X</span>
+    </a>
+
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
-        min-width: 48px; /* Ajuste para o tamanho dos botões */
+        flex-shrink: 0;
+        min-width: 48px;
         height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid #ccc;
-        border-radius: 8px; /* Cantos mais arredondados */
+        border-radius: 8px;
         background-color: white;
         color: #333;
         font-weight: bold;
@@ -405,6 +543,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -425,6 +564,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -445,6 +585,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -465,6 +606,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -485,6 +627,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -505,6 +648,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -525,6 +669,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -545,6 +690,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
@@ -564,69 +710,91 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             <span class="elementor-button-text">45</span>
         </span>
     </a>
+
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
+        flex-shrink: 0;
         min-width: 48px;
         height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc;
+        border: 1px solid #eee;
         border-radius: 8px;
-        background-color: #f0f0f0; /* Fundo cinza para indisponível */
-        color: #aaa; /* Texto cinza para indisponível */
-        font-weight: bold;
-        font-size: 1.1em;
-        text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        transition: all 0.2s ease;
-        position: relative; /* Para posicionar o 'X' */
-        overflow: hidden; /* Para esconder parte do 'X' se for grande */
-    ">
-        <span class="elementor-button-content-wrapper">
-            <span class="elementor-button-text">46<span class="x-overlay" style="
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) rotate(45deg);
-                font-size: 2.5em; /* Tamanho do X */
-                color: #e0e0e0; /* Cor do X */
-                opacity: 0.8;
-                pointer-events: none; /* Não interfere no clique */
-                z-index: 1; /* Para ficar por cima do texto, se quiser */
-            ">X</span></span>
-        </span>
-    </a>
-    <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
-        min-width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background-color: #f0f0f0;
+        background-color: #f7f7f7;
         color: #aaa;
         font-weight: bold;
         font-size: 1.1em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.02);
         transition: all 0.2s ease;
         position: relative;
-        overflow: hidden;
+        cursor: not-allowed;
     ">
         <span class="elementor-button-content-wrapper">
-            <span class="elementor-button-text">47<span class="x-overlay" style="
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) rotate(45deg);
-                font-size: 2.5em;
-                color: #e0e0e0;
-                opacity: 0.8;
-                pointer-events: none;
-                z-index: 1;
-            ">X</span></span>
+            <span class="elementor-button-text">46</span>
         </span>
+        <span class="x-overlay-indisponivel" style="
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            color: #DC3545;
+            font-weight: bold;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            pointer-events: none;
+            z-index: 10;
+        ">X</span>
+    </a>
+
+    <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
+        flex-shrink: 0;
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        color: #aaa;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-decoration: none;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        transition: all 0.2s ease;
+        position: relative;
+        cursor: not-allowed;
+    ">
+        <span class="elementor-button-content-wrapper">
+            <span class="elementor-button-text">47</span>
+        </span>
+        <span class="x-overlay-indisponivel" style="
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            color: #DC3545;
+            font-weight: bold;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            pointer-events: none;
+            z-index: 10;
+        ">X</span>
     </a>
 </div>
 
@@ -635,6 +803,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     .ns-size-selector-container .botao-tamanho:hover:not(.indisponivel) {
         border-color: #6200EE !important; /* Cor da borda no hover */
         box-shadow: 0 1px 4px rgba(98, 0, 238, 0.3) !important; /* Sombra no hover */
+    }
+
+    /* Esconde a barra de rolagem em navegadores WebKit (Chrome, Safari) */
+    .ns-size-selector-container::-webkit-scrollbar {
+        display: none;
+    }
+    /* Para Firefox */
+    .ns-size-selector-container {
+        scrollbar-width: none;
     }
 </style>
 				</div>
