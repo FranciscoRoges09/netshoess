@@ -9,14 +9,14 @@
 /* Estilo para o texto do indicador de progresso */
 .quiz-progress p {
     font-size: 1em;
-    color: #666; /* Cor do texto do progresso */
+    color: #000; /* Cor do texto do progresso */
     margin: 0;
 }
 
 /* Estilo opcional para destacar o número da pergunta atual */
 .quiz-progress .current-question {
     font-weight: bold;
-    color: #007bff; /* Uma cor que se destaque, como azul ou laranja */
+    color: #8201FF; /* Uma cor que se destaque, como azul ou laranja */
 }
 .titllee h1 {
     font-size: 3em; /* Ajuste o tamanho da fonte do seu título, se necessário */
