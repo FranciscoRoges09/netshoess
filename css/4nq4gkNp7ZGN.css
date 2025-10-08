@@ -1,4 +1,10 @@
 /* Exemplo de reset de CSS */
+.end-screen-banner {
+    max-width: 100%; /* Garante que o banner não exceda a largura do contêiner */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin: 20px auto; /* Adiciona margem acima/abaixo e centraliza horizontalmente (se o display for block) */
+    display: block;  /* Faz com que o banner ocupe sua própria linha e permita 'margin: auto' */
+}
 /* Estilo para o contêiner do progresso */
 .quiz-progress {
     margin-bottom: 20px; /* Espaço entre o indicador e o texto da pergunta */
