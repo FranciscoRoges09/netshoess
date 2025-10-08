@@ -1,4 +1,16 @@
 /* Exemplo de reset de CSS */
+
+.titllee h1 {
+    font-size: 3em; /* Ajuste o tamanho da fonte do seu título, se necessário */
+    text-align: center; /* Centralize o texto e as logos */
+    /* Outros estilos do seu título, como margin, color, etc. */
+}
+
+.logo-parceria {
+    height: 1.5em; /* Ajuste a altura das logos para que elas se encaixem bem com o texto */
+    vertical-align: middle; /* Alinha verticalmente as logos com o texto ao redor */
+    margin: 0 5px; /* Adiciona um pequeno espaçamento entre as logos e o texto */
+}
 * {
     margin: 0;
     padding: 0;
