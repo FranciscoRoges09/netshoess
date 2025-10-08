@@ -376,34 +376,36 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </div>				</div>
 				<div class="elementor-element elementor-element-c3ad6d5 elementor-widget elementor-widget-heading" data-id="c3ad6d5" data-element_type="widget" data-widget_type="heading.default">
     <div class="elementor-widget-container">
-        <h2 class="elementor-heading-title elementor-size-default" style="font-size: 1.2em; font-weight: bold; margin-bottom: 15px;">Tamanho:</h2>
+        <h2 class="elementor-heading-title elementor-size-default" style="font-size: 1.2em; font-weight: bold; margin-bottom: 15px;">Escolha o tamanho:</h2>
     </div>
 </div>
 
 <div class="ns-size-selector-container" style="
     display: grid;
     /* Adapta o número de colunas:
-       Cria quantas colunas puderem caber, com cada uma tendo no mínimo 45px de largura,
+       Cria quantas colunas puderem caber, com cada uma tendo no mínimo 48px de largura,
        e distribuindo o restante do espaço igualmente (1fr).
        Isso fará com que todos os botões fiquem visíveis e quebrem a linha automaticamente. */
-    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
-    gap: 12px; /* Espaçamento entre os botões */
+    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr)); 
+    gap: 8px; /* Espaçamento entre os botões, um pouco menor para caber mais */
     margin-bottom: 30px;
+    padding-right: 2px; /* Pequeno padding para evitar que o último item da linha fique "grudado" na borda */
 ">
+    
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
-        width: 100%; /* Ocupa a largura da coluna do grid */
+        width: 100%; 
         aspect-ratio: 1 / 1; /* Faz o botão ser quadrado */
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc; /* Borda mais suave para disponíveis */
+        border: 1px solid #ccc; /* Borda sólida para disponível */
         border-radius: 8px;
-        background-color: white;
-        color: #333;
+        background-color: white; /* Fundo branco para disponível */
+        color: #333; /* Texto escuro */
         font-weight: bold;
         font-size: 1.1em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05); /* Sombra suave para disponível */
         transition: all 0.2s ease;
     ">
         <span class="elementor-button-content-wrapper">
@@ -510,6 +512,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             <span class="elementor-button-text">40</span>
         </span>
     </a>
+
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho" href="#" style="
         width: 100%;
         aspect-ratio: 1 / 1;
@@ -610,47 +613,28 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             <span class="elementor-button-text">45</span>
         </span>
     </a>
-    
+
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
         width: 100%;
         aspect-ratio: 1 / 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ddd; /* Borda visível para indisponível */
+        border: 1px dashed #ccc; /* Borda tracejada para indisponível */
         border-radius: 8px;
-        background-color: #f0f0f0; /* Fundo cinza para indisponível */
-        color: #aaa; /* Texto cinza para indisponível */
+        background-color: #f7f7f7; /* Fundo mais claro/esmaecido */
+        color: #aaa; /* Texto cinza claro */
         font-weight: bold;
         font-size: 1.1em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        box-shadow: none; /* Sem sombra para indisponíveis */
         transition: all 0.2s ease;
-        position: relative;
+        position: relative; 
         cursor: not-allowed;
     ">
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">46</span>
         </span>
-        <span class="x-overlay-indisponivel" style="
-            position: absolute;
-            top: -6px; /* Ajuste fino para o X */
-            right: -6px; /* Ajuste fino para o X */
-            background-color: white; /* Fundo branco do X */
-            border: 1px solid #ccc; /* Borda cinza do X */
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8em;
-            color: #888; /* Cor do X em cinza */
-            font-weight: bold;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            pointer-events: none;
-            z-index: 10;
-        ">X</span>
     </a>
     <a class="elementor-button elementor-button-link elementor-size-sm botao-tamanho indisponivel" href="javascript:void(0);" style="
         width: 100%;
@@ -658,14 +642,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ddd;
+        border: 1px dashed #ccc;
         border-radius: 8px;
-        background-color: #f0f0f0;
+        background-color: #f7f7f7;
         color: #aaa;
         font-weight: bold;
         font-size: 1.1em;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        box-shadow: none;
         transition: all 0.2s ease;
         position: relative;
         cursor: not-allowed;
@@ -673,26 +657,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         <span class="elementor-button-content-wrapper">
             <span class="elementor-button-text">47</span>
         </span>
-        <span class="x-overlay-indisponivel" style="
-            position: absolute;
-            top: -6px;
-            right: -6px;
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8em;
-            color: #888;
-            font-weight: bold;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            pointer-events: none;
-            z-index: 10;
-        ">X</span>
     </a>
+
 </div>
 
 <style>
